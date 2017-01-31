@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="screen.ReportsMenuController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="315.0">
+         <children>
+            <VBox layoutX="121.0" layoutY="77.0" prefHeight="85.0" prefWidth="150.0" spacing="50.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <Button layoutX="121.0" layoutY="77.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="202.0" text="Upload CSV" />
+                  <Button layoutX="121.0" layoutY="133.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="204.0" text="Remove Selected CSV" />
+                  <Button fx:id="back" layoutX="121.0" layoutY="208.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="54.0" prefWidth="207.0" text="Back to Menu" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="383.0">
+         <children>
+            <TableView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn editable="false" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" text="Bank" />
+                <TableColumn editable="false" maxWidth="400.0" minWidth="400.0" prefWidth="400.0" resizable="false" text="File name" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

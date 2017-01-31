@@ -1,0 +1,4 @@
+.skuska2 {
+-fx-background-radius: 20px;
+-fx-background-color: yellow
+}
